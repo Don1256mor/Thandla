@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="page">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Game UI Page -->
+    <div id="gamePage" class="page" style="display: none;">
+        <h2>Place Your Bet</h2>
+        <div class="bet-options">
+            <div>
+                <label for="color">Color</label>
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input type="number" id="number" min="1" max="10">
+            </div>
+            <div>
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <button id="placeBetBtn">Place Bet</button>
+        </div>
+
+        <div id="timer">
+            <p>Time Left: <span id="countdown">15</span> seconds</p>
+        </div>
+
+        <div id="resultSection" style="display: none;">
+            <h3>Result</h3>
+            <p>Color: <span id="resultColor"></span></p>
+            <p>Number: <span id="resultNumber"></span></p>
+            <p>Size: <span id="resultSize"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
